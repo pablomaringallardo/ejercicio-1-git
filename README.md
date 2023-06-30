@@ -1,6 +1,6 @@
 # ejercicio-1-git
 
-1. Git reset —hard HEAD~1, porque para deshacer el último commit perdiendo los cambios realizados en el working copy hay que usar ese comando o también se puede usar “git reset HEAD~1 + git restore <file>”
+1. "Git reset —hard HEAD~1", porque para deshacer el último commit perdiendo los cambios realizados en el working copy hay que usar ese comando o también se puede usar “git reset HEAD~1 + git restore <file>”
 2. En el paso 12 he usado “git reflog” para obtener el ID del commit al que deseo volver. Después he usado el comando git reset <ID del commit> para restaurar el commit que he elegido con el ID. Y por último he usado git restore <nombre del archivo>  para restaurar el estado del archivo “git-nuestro.md”.
 3. No ha causado ningún conflicto, cuando usé el comando “git merge main” me dio el mensaje “Already up to date”.
 4. En el paso 19 si me ha creado conflicto porque me pedía con que contenido de las dos ramas me quería quedar, elegí el contenido de la rama styles para resolver el conflicto.
